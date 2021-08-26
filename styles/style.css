@@ -13,6 +13,7 @@
 html{
     box-sizing: inherit;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 *, *:before, *:after{
@@ -27,10 +28,29 @@ h1{
     text-align: center;
 }
 
+h2{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3{
+    color: black;
+    font-size: 28px;
+    font-style:italic;
+    text-align: center;
+}
+
 a{
     text-decoration: none;
     color: white;
     font-size: 17px;
+}
+
+p{
+    color: black;
+    font-style:italic;
+    text-align: center;
 }
 
 li{
@@ -40,7 +60,7 @@ li{
 body{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    
 }
 
 /*-----header---*/
@@ -49,8 +69,12 @@ body{
 
 .header{
     width: 100%;
+    height: 100vh;
 }
 
+.headerContenedor{
+    height: auto;
+}
 
 .logo{
     display: flex;
@@ -110,7 +134,7 @@ body{
 
 .hero{
     background-image: url(../img/hero4.jpeg);
-    height: 100%;
+    height: 80%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -141,20 +165,56 @@ body{
 /*MAIN*/
 
 /*NIVELES*/
+/*-----------------------------------*/
 
-.nivelesContenedor{
+
+.carousel{
     display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    
 }
 
-.niveles{
-    display: flex;
+
+.carousel--item{
+    height: 40rem;
+    box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.75);
+    width: 28rem;
+    border-radius: 20px;
+    
 }
 
-.grado{
-    display: flex;
-    flex-direction: column;
+
+.nivelesImg{
+    width: 100%;
+    height: 30rem;
+    
 }
 
-.imgNiveles img{
-    height: 15rem;
+.nivelesImg img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
+
+
+.nivelesDesc{
+    padding-left: 1rem;
+}
+
+.nivelesDesc p{
+    font-size: 13px;
+    padding-bottom: 2rem;
+    
+}
+
+.carousel--item:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
