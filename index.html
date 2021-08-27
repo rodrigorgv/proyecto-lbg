@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo2.png">
     <title>Liceo Bella Guatemala</title>
     <link rel="stylesheet" href="styles/style.css">
 
@@ -19,23 +20,23 @@
                 </a>
             </div>
 
-            <nav class="navegation">
-                <div class="items">
-                    <ul class="elementos">
+            <nav class="navegation dropdownMenu">
+                <svg class="menusvg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: #211f8d;transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                    <ul class="elementos dropdownContent">
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Nosotros</a></li>
                         <li><a href="#niveles">Niveles</a></li>
                         <li><a href="#">Reclutamiento</a></li>
                         <li><a href="#">Contactanos</a></li>
                     </ul>
-                </div>
+                
             </nav>
         </div>
         <div class="hero">
             <div class="sombra">
                 <div class="eslogan">
 
-                    <h1>Somos formadores del futuro de una bella <br> Guatemala </h1>
+                    <h1>Somos formadores del futuro de una bella Guatemala </h1>
 
                 </div>
             </div>
@@ -43,46 +44,50 @@
     </header>
 
     <main class="contenedor">
-        <h2>Niveles</h2>
-        <div class="carousel" id="niveles">
-            <div class="carousel--item">
-                <div class="nivelesImg"><img src="./img/nivelpreprimaria2.jpeg" alt=""></div>
 
-                <div class="nivelesDesc">
-                    <h3>Pre-Primaria</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+        <div class="mainContenedor">
+            <h2 id="niveles">Niveles</h2>
+            <div class="carousel">
+                <div class="carousel--item preprimaria">
+                    <div class="nivelesImg"><img src="./img/nivelpreprimaria2.jpeg" alt=""></div>
+
+                    <div class="nivelesDesc">
+                        <h3>Pre-Primaria</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+
+
                 </div>
+                <!--cierre-->
 
+
+                <div class="carousel--item primaria">
+                    <div class="nivelesImg"><img src="./img/nivelprimaria4.jpeg" alt=""></div>
+
+                    <div class="nivelesDesc">
+                        <h3>Primaria</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+
+
+                </div>
+                <!--cierre-->
+
+
+                <div class="carousel--item basicos">
+                    <div class="nivelesImg"><img src="./img/nivelbasico1" alt=""></div>
+
+                    <div class="nivelesDesc">
+                        <h3>Basicos</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+
+
+                </div>
+                <!--cierre-->
 
             </div>
-            <!--cierre-->
-
-            
-            <div class="carousel--item">
-                <div class="nivelesImg"><img src="./img/nivelprimaria4.jpeg" alt=""></div>
-
-                <div class="nivelesDesc">
-                    <h3>Primaria</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
-
-
-            </div>
-            <!--cierre-->
-
-
-            <div class="carousel--item">
-                <div class="nivelesImg"><img src="./img/nivelbasico1" alt=""></div>
-
-                <div class="nivelesDesc">
-                    <h3>Basicos</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
-
-
-            </div>
-            <!--cierre-->
-
         </div>
     </main>
 
