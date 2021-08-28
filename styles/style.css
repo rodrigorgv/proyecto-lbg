@@ -41,6 +41,11 @@ h3 {
     text-align: center;
 }
 
+h4{
+    font-size: 20px;
+    
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -99,6 +104,7 @@ body {
 .menusvg {
     display: block;
     cursor: pointer;
+    height: 10rem;
 }
 
 .dropdownMenu {
@@ -112,7 +118,7 @@ body {
     background-color: var(--azul3);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     right: 0;
-    top: 140%;
+    top: 100%;
     z-index: 1;
     width: 20rem;
 }
@@ -136,25 +142,20 @@ body {
     transition: .5s;
 }
 
-
-.dropdownMenu:hover .dropdownContent{
+.dropdownMenu:hover .dropdownContent {
     display: block;
 }
 
-
 @media (min-width: 600px) {
-
-    .dropdownMenu:hover .dropdownContent{
+    .dropdownMenu:hover .dropdownContent {
         display: flex;
     }
     .menusvg {
         display: none;
     }
-
     .headerContenedor {
         display: block;
     }
-
     .navegation {
         position: static;
         background-color: var(--azul3);
@@ -162,8 +163,6 @@ body {
         display: flex;
         align-items: center;
     }
-
-
     .elementos {
         position: static;
         display: flex;
@@ -172,7 +171,6 @@ body {
         justify-content: space-evenly;
         align-items: center;
     }
-
     .elementos li {
         width: 100%;
         height: 100%;
@@ -180,7 +178,6 @@ body {
         justify-content: center;
         align-items: center;
     }
-
     .elementos li a {
         width: 100%;
         height: 100%;
@@ -188,10 +185,9 @@ body {
         justify-content: center;
         align-items: center;
     }
-
-  
-
-
+    .dropdownMenu:hover .dropdownContent {
+        display: flex;
+    }
 }
 
 .hero {
@@ -235,12 +231,10 @@ body {
     padding-top: 2rem;
 }
 
-.contenedor {
-    min-height: 100vh;
-}
+
 
 .mainContenedor {
-    height: 90vh;
+    min-height: 60vh;
 }
 
 .carousel {
@@ -309,10 +303,10 @@ body {
     }
     .hero {
         background-size: cover;
-        background-position: center center;
+        background-position: center bottom;
     }
     .mainContenedor {
-        height: 100vh;
+        min-height: 100vh;
     }
 }
 
@@ -330,5 +324,67 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: right;
+        min-height: 50vh;
     }
+}
+
+
+/*-Separator-*/
+.separator{
+    height: 6rem;
+    width: 100%;
+}
+
+.separator img{
+    width: 100%;
+}
+
+/*-Servicios-*/
+
+.services{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.services h2{
+    margin-bottom: 4rem;
+}
+
+.service{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--azul1) ;
+    border-radius: 50px;
+    padding: 1rem;
+    max-height: 7rem;
+    max-width: 7rem;
+}
+
+.services__desc{
+    margin-left: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.services__desc p{
+    text-align: left;
+    font-size: 16px;
+    font-style: normal;
+
 }
